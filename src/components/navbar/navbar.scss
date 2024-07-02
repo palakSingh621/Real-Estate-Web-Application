@@ -1,0 +1,108 @@
+@import "../../responsive.scss";
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+    a{
+        transition: all 0.4s ease;
+
+        @include small{
+            display: none;
+        }
+        &:hover{
+            scale:1.05;
+        }
+    }
+
+    .left{
+        flex:3;
+        align-items: center;
+        display: flex;
+        gap:50px;
+
+        .logo{
+            font-weight:bold;
+            font-size: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        img{
+            width: 28px;
+        }
+
+        span{
+            @include medium{
+                display: none;
+            }
+            
+            @include small{
+                display: initial;
+            }
+        }
+    }
+    .right{
+        flex:2;
+        background: #fcf5f3;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+
+        @include medium{
+            background-color: transparent;
+        }
+        a{
+            padding: 12px 24px;
+            margin:20px;
+                @include medium{
+                    margin:10px;
+                    padding: 8px 16px;
+                }
+            }
+        .register{
+            background-color: rgb(255, 217, 0);
+        }
+        .menuIcon{
+            display: none;
+            img{
+                height: 36px;
+                width : 36px;
+                cursor: pointer;
+            }
+
+            @include small{
+                display: initial;
+                z-index: 999;
+            }
+        }
+
+        .menu{
+            position:absolute;
+            height : 100vh;
+            width : 50%;
+            top: 0;
+            right:-50%;
+            background-color: black;
+            color: #fcf5f3;
+            transition: all 1s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+                        
+            &.active{
+                right:0;
+            }
+            @include small{
+                a{
+                display: initial;
+                }
+            }
+        }
+    }
+}

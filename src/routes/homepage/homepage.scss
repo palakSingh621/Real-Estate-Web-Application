@@ -1,0 +1,45 @@
+.homepage{
+    height: 100%;
+    display: flex;
+
+    .textContainer{
+        flex: 3;
+        .wrapper{
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            height: 100%;
+            
+            h1{
+                font-size: 54px;
+            }
+            p{
+                font-size: medium;
+            }
+            .boxes{
+                display: flex;
+                justify-content: space-between;
+                h1{
+                    font-size: 36px;
+                }
+                h2{
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    .imgContainer{
+        flex:2;
+        background-color: #fcf5f3;
+        position: relative;
+        display: flex;
+        align-items: center;
+        img{
+            width: 115%;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
