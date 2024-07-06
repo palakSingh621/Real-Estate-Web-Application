@@ -7,8 +7,8 @@ function Navbar(){
         <nav>
             <div className="left"> 
                 <a href="/" className="logo">
-                <img src="/logo.png" alt=""/>
-                <span>RealEstate</span>
+                    <img src="/logo.png" alt=""/>
+                    <span>RealEstate</span>
                 </a>
                 <a href="/">Home</a>
                 <a href="/">About</a>
@@ -19,9 +19,7 @@ function Navbar(){
                 <a href="/">Sign In</a>
                 <a href="/" className="register">Sign Up</a>
                 <div className="menuIcon">
-                    <img src="/menu.png" alt=""  onClick={()=>setOpen((prev)=>!prev)}>
-
-                    </img>
+                    <img src="/menu.png" alt=""  onClick={()=>setOpen((prev)=>!prev)}/>
                 </div>
                 <div className={open?"menu active":"menu"}>
                     <a href="/">Home</a>
