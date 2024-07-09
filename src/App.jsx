@@ -1,7 +1,7 @@
-import HomePage from "./routes/homepage/homepage.jsx"
-import ListPage from "./routes/listPage/listPage.jsx"
-import Layout from "./routes/layout/layout.jsx"
-import SinglePage from "./routes/singlePage/singlePage.jsx"
+import HomePage from './routes/homepage/homepage'
+import ListPage from './routes/listPage/listPage'
+import Layout from './routes/layout/layout.jsx'
+import SinglePage from './routes/singlePage/singlePage'
 import {
   createBrowserRouter,
   RouterProvider,
